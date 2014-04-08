@@ -1,6 +1,6 @@
 {	"expiration" : {"day":1},
-	"conditions": [ ["starts-with", "$key", ""],
-    				 {"bucket": "kamil.bujakowski"}, 
+	"conditions": [ ["starts-with", "$key", "kamil.bujakowski"],
+    				 {"bucket": "lab4-weeia"}, 
     				 {"acl": "private"},
     				 {"success_action_redirect": "http://localhost:8080/s3digest"},   
     				 ["content-length-range", 0, 1048576]
